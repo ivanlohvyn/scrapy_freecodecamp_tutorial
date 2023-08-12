@@ -4,7 +4,8 @@
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-	"onCreateCommand": "bash .devcontainer/onCreate.sh"
+	"onCreateCommand": "bash .devcontainer/onCreate.sh",
+	"postCreateCommand": "bash .devcontainer/postCreate.sh"
 	
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
